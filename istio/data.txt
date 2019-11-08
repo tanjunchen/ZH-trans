@@ -1,0 +1,889 @@
+commit 41892ae557fed5cf193ab41d3ae82af2c0625716
+Author: Jimmy Song <rootsongjc@gmail.com>
+Date:   Tue Nov 5 10:47:44 2019 +0800
+
+    zh-translations: most of _index.md (#5338)
+    
+    Refer to the following issues:
+    - https://github.com/servicemesher/istio-official-translation/issues/1390
+    - https://github.com/servicemesher/istio-official-translation/issues/1389
+    - https://github.com/servicemesher/istio-official-translation/issues/1386
+    - https://github.com/servicemesher/istio-official-translation/issues/1385
+    - https://github.com/servicemesher/istio-official-translation/issues/1382
+    - https://github.com/servicemesher/istio-official-translation/issues/1365
+    - https://github.com/servicemesher/istio-official-translation/issues/1363
+    - https://github.com/servicemesher/istio-official-translation/issues/1362
+    - https://github.com/servicemesher/istio-official-translation/issues/1360
+    - https://github.com/servicemesher/istio-official-translation/issues/1359
+    - https://github.com/servicemesher/istio-official-translation/issues/1358
+    - https://github.com/servicemesher/istio-official-translation/issues/1357
+    - https://github.com/servicemesher/istio-official-translation/issues/1356
+    - https://github.com/servicemesher/istio-official-translation/issues/1355
+    - https://github.com/servicemesher/istio-official-translation/issues/1349
+    - https://github.com/servicemesher/istio-official-translation/issues/1345
+    - https://github.com/servicemesher/istio-official-translation/issues/1320
+    - https://github.com/servicemesher/istio-official-translation/issues/1313
+    - https://github.com/servicemesher/istio-official-translation/issues/1309
+    - https://github.com/servicemesher/istio-official-translation/issues/1302
+    - https://github.com/servicemesher/istio-official-translation/issues/1301
+    - https://github.com/servicemesher/istio-official-translation/issues/1290
+    - https://github.com/servicemesher/istio-official-translation/issues/1280
+    - https://github.com/servicemesher/istio-official-translation/issues/1272
+    - https://github.com/servicemesher/istio-official-translation/issues/1254
+    - https://github.com/servicemesher/istio-official-translation/issues/1241
+    - https://github.com/servicemesher/istio-official-translation/issues/1235
+    - https://github.com/servicemesher/istio-official-translation/issues/1231
+    - https://github.com/servicemesher/istio-official-translation/issues/1226
+    - https://github.com/servicemesher/istio-official-translation/issues/1218
+    - https://github.com/servicemesher/istio-official-translation/issues/1159
+    - https://github.com/servicemesher/istio-official-translation/issues/1148
+    - https://github.com/servicemesher/istio-official-translation/issues/1143
+    - https://github.com/servicemesher/istio-official-translation/issues/1120
+    - https://github.com/servicemesher/istio-official-translation/issues/1118
+    - https://github.com/servicemesher/istio-official-translation/issues/1108
+    - https://github.com/servicemesher/istio-official-translation/issues/1104
+    - https://github.com/servicemesher/istio-official-translation/issues/1099
+    - https://github.com/servicemesher/istio-official-translation/issues/1073
+    - https://github.com/servicemesher/istio-official-translation/issues/1058
+    - https://github.com/servicemesher/istio-official-translation/issues/1040
+    - https://github.com/servicemesher/istio-official-translation/issues/1038
+    - https://github.com/servicemesher/istio-official-translation/issues/1031
+    - https://github.com/servicemesher/istio-official-translation/issues/1026
+    - https://github.com/servicemesher/istio-official-translation/issues/1025
+    
+    Signed-off-by: Jimmy song <rootsongjc@gmail.com>
+
+diff --git a/content/zh/about/_index.md b/content/zh/about/_index.md
+index 8c4ddadb..8c55921b 100644
+--- a/content/zh/about/_index.md
++++ b/content/zh/about/_index.md
+@@ -1,7 +1,7 @@
+ ---
+-title: About Istio
+-linktitle: About
+-description: Get a bit more in-depth info about the Istio project.
++title: 关于 Istio
++linktitle: 关于
++description: 关于 Istio 项目的说明。
+ sidebar_singlecard: true
+ weight: 15
+ icon: about
+diff --git a/content/zh/about/contribute/_index.md b/content/zh/about/contribute/_index.md
+index a3d6c751..fb63b6d7 100644
+--- a/content/zh/about/contribute/_index.md
++++ b/content/zh/about/contribute/_index.md
+@@ -1,8 +1,9 @@
+ ---
+-title: Contributing to the Docs
+-description: Learn how to contribute to improve and expand the Istio documentation.
++title: 贡献文档
++description: 了解如何为提高和改善 Istio 的文档做贡献。
+ weight: 100
++icon: contribute
+ aliases:
+-    - /docs/welcome/contribute/index.html
++    - /zh/docs/welcome/contribute/index.html
+ icon: contribute
+ ---
+diff --git a/content/zh/blog/2017/_index.md b/content/zh/blog/2017/_index.md
+index 4825d136..cdd20eb0 100644
+--- a/content/zh/blog/2017/_index.md
++++ b/content/zh/blog/2017/_index.md
+@@ -1,7 +1,7 @@
+ ---
+-title: 2017 Posts
+-description: Blog posts for 2017.
+-weight: 20
++title: 2017 年的博客文章
++description: 2017 年的博客文章。
++weight: 10
+ icon: blog
+ list_by_publishdate: true
+ ---
+diff --git a/content/zh/blog/2018/_index.md b/content/zh/blog/2018/_index.md
+index a8103cf4..95f9be17 100644
+--- a/content/zh/blog/2018/_index.md
++++ b/content/zh/blog/2018/_index.md
+@@ -1,6 +1,6 @@
+ ---
+-title: 2018 Posts
+-description: Blog posts for 2018.
++title: 2018 年的博客文章
++description: 2018 年的博客文章。
+ weight: 10
+ icon: blog
+ list_by_publishdate: true
+diff --git a/content/zh/blog/2019/_index.md b/content/zh/blog/2019/_index.md
+index 376e8ce3..923603f6 100644
+--- a/content/zh/blog/2019/_index.md
++++ b/content/zh/blog/2019/_index.md
+@@ -1,6 +1,6 @@
+ ---
+-title: 2019 Posts
+-description: Blog posts for 2019.
++title: 2019 年的博客文章
++description: 2019 年的博客文章。
+ weight: 9
+ icon: blog
+ list_by_publishdate: true
+diff --git a/content/zh/blog/_index.md b/content/zh/blog/_index.md
+index 2f02eb59..e6d32d09 100644
+--- a/content/zh/blog/_index.md
++++ b/content/zh/blog/_index.md
+@@ -1,9 +1,9 @@
+ ---
+-title: Istio Blog
+-description: Posts about using Istio.
+-linktitle: Blog
++title: Istio 博客
++description: 关于使用 Istio 的博客文章。
++linktitle: 博客
+ sidebar_multicard: true
+ icon: blog
+ aliases:
+-    - /blog/posts/index.html
++    - /zh/blog/posts/index.html
+ ---
+diff --git a/content/zh/docs/_index.md b/content/zh/docs/_index.md
+index e630ee88..be49f3ad 100644
+--- a/content/zh/docs/_index.md
++++ b/content/zh/docs/_index.md
+@@ -1,14 +1,14 @@
+ ---
+-title: Docs
+-linktitle: Docs
+-description: Learn how to deploy, use, and operate Istio.
++title: 文档
++linktitle: 文档
++description: 了解如何部署、使用和运维 Istio。
+ weight: 1
+ sidebar_multicard: true
+ icon: docs
+ ---
+ 
+-In addition to the above documentation links, please consider the following resources:
++另外，除了上面的文档链接，我们还提供了以下资源：
+ 
+-- [Frequently Asked Questions](/faq)
+-- [Glossary](/docs/reference/glossary)
+-- [Documentation Archive](https://archive.istio.io/), which contains snapshots of the documentation for prior releases.
++- [FAQ](/zh/faq)
++- [词汇表](/zh/docs/reference/glossary)。
++- [文档归档](https://archive.istio.io/)中包括了历史版本的快照。
+\ No newline at end of file
+diff --git a/content/zh/docs/concepts/_index.md b/content/zh/docs/concepts/_index.md
+index 18cd3754..a82e27f1 100644
+--- a/content/zh/docs/concepts/_index.md
++++ b/content/zh/docs/concepts/_index.md
+@@ -1,6 +1,6 @@
+ ---
+-title: Concepts
+-description: Learn about the different parts of the Istio system and the abstractions it uses.
++title: 概念
++description: 一些概念，理解它们有助于您更好地了解 Istio 系统的不同部分及其使用的抽象。
+ weight: 10
+ icon: concepts
+ ---
+diff --git a/content/zh/docs/examples/_index.md b/content/zh/docs/examples/_index.md
+index ec5fdd0f..62e452c7 100644
+--- a/content/zh/docs/examples/_index.md
++++ b/content/zh/docs/examples/_index.md
+@@ -1,9 +1,9 @@
+ ---
+-title: Examples
+-description: A variety of fully working example uses for Istio that you can experiment with.
++title: 示例
++description: 这里包括多个可供 Istio 使用的可完整工作的示例，你可以用来亲自部署和体验这些示例。
+ weight: 30
+-aliases:
+-    - /docs/samples/index.html
+-    - /docs/guides/index.html
+ icon: examples
++aliases:
++    - /zh/docs/samples/index.html
++    - /zh/docs/guides/index.html
+ ---
+diff --git a/content/zh/docs/examples/mesh-expansion/_index.md b/content/zh/docs/examples/mesh-expansion/_index.md
+index d413799e..e9b9c65d 100644
+--- a/content/zh/docs/examples/mesh-expansion/_index.md
++++ b/content/zh/docs/examples/mesh-expansion/_index.md
+@@ -1,9 +1,9 @@
+ ---
+-title: Mesh Expansion
+-description: Configure an Istio mesh spanning  Kubernetes clusters, VMs and bare metals.
++title: 网格扩展
++description: 配置一个跨 Kubernetes 集群、VM 和裸机的 Istio 网格。
+ weight: 90
+ aliases:
+-    - /docs/examples/mesh-expansion/
++    - /zh/docs/examples/mesh-expansion/
+ keywords: [kubernetes,mesh expansion]
+ ---
+ 
+diff --git a/content/zh/docs/examples/microservices-istio/_index.md b/content/zh/docs/examples/microservices-istio/_index.md
+index 968e9b76..f14925c7 100644
+--- a/content/zh/docs/examples/microservices-istio/_index.md
++++ b/content/zh/docs/examples/microservices-istio/_index.md
+@@ -1,17 +1,14 @@
+ ---
+-title: Learn Microservices using Kubernetes and Istio 
+-description: This modular tutorial provides new users with hands-on experience using Istio for common microservices scenarios, one step at a time.   
++title: 使用 Kubernetes 和 Istio 学习微服务
++description: 该模块化教程为新用户提供了一步步将 Istio 应用于常见微服务场景的动手经验。
+ weight: 40
+ icon: classroom
+ simple_list: true
+ content_above: true
+ ---
+ 
+-It is intended for self-guided users or instructors who train
+-others. It begins with the steps to set up a cluster to
+-control an example microservice running on a local computer, and culminates into
+-demonstrating several crucial microservice management tasks using Istio.
++适用于培训他人的自学用户或讲师。从设置集群以控制在本地计算机上运行的示例微服务的步骤开始，并最终展示了使用 Istio 的一些关键的微服务管理任务。
+ 
+-For the best experience, follow the modules in the order provided.
++为了获得最佳体验，请按照提供的顺序执行以下模块。
+ 
+ {{< boilerplate work-in-progress >}}
+diff --git a/content/zh/docs/examples/multicluster/_index.md b/content/zh/docs/examples/multicluster/_index.md
+index c3f5abfb..36f2a7fd 100644
+--- a/content/zh/docs/examples/multicluster/_index.md
++++ b/content/zh/docs/examples/multicluster/_index.md
+@@ -1,8 +1,7 @@
+ ---
+-title: Multicluster Service Mesh
+-description: Multicluster service mesh examples for Istio that you can experiment with.
++title: 多集群服务网格
++description: 您可以尝试的 Istio 的多集群服务网格示例。
+ weight: 100
+ keywords: [multicluster]
+ ---
+-Refer to the [multicluster service mesh](/docs/setup/deployment-models/) concept documentation
+-for more information.
++有关更多信息，请参阅[多集群服务网格](/zh/docs/setup/deployment-models/)概念文档。
+\ No newline at end of file
+diff --git a/content/zh/docs/ops/_index.md b/content/zh/docs/ops/_index.md
+index 86518047..aa12d6d1 100644
+--- a/content/zh/docs/ops/_index.md
++++ b/content/zh/docs/ops/_index.md
+@@ -1,12 +1,13 @@
+ ---
+-title: Operations
+-description: Hints, tips, tricks about running an Istio mesh.
++title: 运维指南
++description: 关于运行 Istio 网格的提示、技巧和窍门。
+ weight: 32
++icon: guide
+ aliases:
+-    - /troubleshooting.html
+-    - /troubleshooting/index.html
+-    - /help/troubleshooting/index.html
+-    - /help/ops
+-    - /help
++    - /zh/troubleshooting.html
++    - /zh/troubleshooting/index.html
++    - /zh/help/troubleshooting/index.html
++    - /zh/help/ops
++    - /zh/help
+ icon: guide
+ ---
+diff --git a/content/zh/docs/ops/common-problems/_index.md b/content/zh/docs/ops/common-problems/_index.md
+index 74eacc5f..b130befc 100644
+--- a/content/zh/docs/ops/common-problems/_index.md
++++ b/content/zh/docs/ops/common-problems/_index.md
+@@ -1,10 +1,10 @@
+ ---
+-title: Common Problems
+-description: Describes how to identify and resolve common problems in Istio.
++title: 普通问题
++description: 描述如何辨认和解决 Istio 中的普通问题。
+ weight: 70
+ keywords: [ops]
+ aliases:
+-    - /help/ops/troubleshooting
+-    - /help/ops/traffic-management/troubleshooting
+-    - /help/ops/setup
++    - /zh/help/ops/troubleshooting
++    - /zh/help/ops/traffic-management/troubleshooting
++    - /zh/help/ops/setup
+ ---
+diff --git a/content/zh/docs/ops/diagnostic-tools/_index.md b/content/zh/docs/ops/diagnostic-tools/_index.md
+index 5326a3bb..93120e5a 100644
+--- a/content/zh/docs/ops/diagnostic-tools/_index.md
++++ b/content/zh/docs/ops/diagnostic-tools/_index.md
+@@ -1,8 +1,8 @@
+ ---
+-title: Diagnostic Tools
+-description: Tools and techniques to help troubleshoot an Istio mesh.
++title: 诊断工具
++description: 帮助解决 Istio 网格问题的工具和技术。
+ weight: 80
+ keywords: [ops]
+ aliases:
+-  - /docs/ops/troubleshooting/proxy-cmd
++  - /zh/docs/ops/troubleshooting/proxy-cmd
+ ---
+diff --git a/content/zh/docs/ops/security/_index.md b/content/zh/docs/ops/security/_index.md
+index 5a70b67d..a6bf4eda 100644
+--- a/content/zh/docs/ops/security/_index.md
++++ b/content/zh/docs/ops/security/_index.md
+@@ -1,8 +1,8 @@
+ ---
+-title: Security
+-description: Helps you manage the security aspects of a running mesh.
++title: 安全
++description: 帮助您管理正在运行的网格的安全性方面。
+ weight: 50
+ keywords: [ops,security]
+ aliases:
+-    - /help/ops/security
++    - /zh/help/ops/security
+ ---
+diff --git a/content/zh/docs/ops/setup/_index.md b/content/zh/docs/ops/setup/_index.md
+index e3ee24bb..bed4f69e 100644
+--- a/content/zh/docs/ops/setup/_index.md
++++ b/content/zh/docs/ops/setup/_index.md
+@@ -1,8 +1,8 @@
+ ---
+-title: Installation and Configuration
+-description: Requirements, concepts, and considerations for installing and configuring Istio.
++title: 安装和配置
++description: 安装和配置 Istio 的要求、概念和注意事项。
+ weight: 30
+ keywords: [ops,setup]
+ aliases:
+-    - /help/ops/setup
++    - /zh/help/ops/setup
+ ---
+diff --git a/content/zh/docs/ops/telemetry/_index.md b/content/zh/docs/ops/telemetry/_index.md
+index 7b69517a..8050275b 100644
+--- a/content/zh/docs/ops/telemetry/_index.md
++++ b/content/zh/docs/ops/telemetry/_index.md
+@@ -1,8 +1,8 @@
+ ---
+-title: Observability
+-description: Helps you manage telemetry collection and visualization in a running mesh.
++title: 可观测性
++description: 帮助您管理正在运行的网格中的遥测收集和可视化。
+ weight: 60
+ keywords: [ops,telemetry]
+ aliases:
+-    - /help/ops/telemetry
++    - /zh/help/ops/telemetry
+ ---
+diff --git a/content/zh/docs/ops/traffic-management/_index.md b/content/zh/docs/ops/traffic-management/_index.md
+index 7139cf76..29f55fa7 100644
+--- a/content/zh/docs/ops/traffic-management/_index.md
++++ b/content/zh/docs/ops/traffic-management/_index.md
+@@ -1,8 +1,8 @@
+ ---
+-title: Traffic Management
+-description: Helps you manage the networking aspects of a running mesh.
++title: 流量管理
++description: 帮助您管理正在运行的网格的网络方面。
+ weight: 40
+ keywords: [ops,traffic-management]
+ aliases:
+-    - /help/ops/traffic-management
++    - /zh/help/ops/traffic-management
+ ---
+diff --git a/content/zh/docs/reference/_index.md b/content/zh/docs/reference/_index.md
+index d7a23534..92b120a0 100644
+--- a/content/zh/docs/reference/_index.md
++++ b/content/zh/docs/reference/_index.md
+@@ -1,6 +1,6 @@
+ ---
+-title: Reference
+-description: Detailed authoritative reference material such as command-line options, configuration options, and API calling parameters.
++title: 参考
++description: 参考部分包含详细的权威参考资料，如命令行选项、配置选项和 API 调用参数。
+ weight: 60
+ icon: reference
+ ---
+diff --git a/content/zh/docs/reference/commands/_index.md b/content/zh/docs/reference/commands/_index.md
+index 64ef4dd2..065928f2 100644
+--- a/content/zh/docs/reference/commands/_index.md
++++ b/content/zh/docs/reference/commands/_index.md
+@@ -1,5 +1,5 @@
+ ---
+-title: Commands
+-description: Describes usage and options of the Istio commands and utilities.
++title: 命令
++description: 描述 Istio 命令和工具的用法及选项。
+ weight: 20
+ ---
+diff --git a/content/zh/docs/reference/config/_index.md b/content/zh/docs/reference/config/_index.md
+index cda2bcef..28786449 100644
+--- a/content/zh/docs/reference/config/_index.md
++++ b/content/zh/docs/reference/config/_index.md
+@@ -1,5 +1,5 @@
+ ---
+-title: Configuration
+-description: Detailed information on configuration options.
++title: 配置
++description: 关于配置选项的详细信息。
+ weight: 10
+ ---
+diff --git a/content/zh/docs/reference/config/analysis/_index.md b/content/zh/docs/reference/config/analysis/_index.md
+index 9631673e..1a21f687 100644
+--- a/content/zh/docs/reference/config/analysis/_index.md
++++ b/content/zh/docs/reference/config/analysis/_index.md
+@@ -1,10 +1,8 @@
+ ---
+-title: Configuration Analysis Messages
+-description: Documents the individual error and warning messages produced during configurarion analysis.
++title: 配置分析消息
++description: 记录配置分析期间产生的各个错误和警告消息。
+ weight: 40
+ layout: analysis-landing
+ ---
+ 
+-[`istioctl`](/docs/reference/commands/istioctl/#istioctl-experimental-analyze) provides rich analysis of Istio configuration state in
+-order to identity invalid or suboptimal configurations. Here's is a list of the distinct possible
+-error or warning messages produced by this analysis.
++[`istioctl`](/zh/docs/reference/commands/istioctl/#istioctl-experimental-analyze)  提供了对 Istio 配置状态的丰富分析，以便标识无效或次优的配置。这是此分析可能产生的错误或警告消息的列表。
+\ No newline at end of file
+diff --git a/content/zh/docs/reference/config/authorization/_index.md b/content/zh/docs/reference/config/authorization/_index.md
+index 2ebca611..73484dc9 100644
+--- a/content/zh/docs/reference/config/authorization/_index.md
++++ b/content/zh/docs/reference/config/authorization/_index.md
+@@ -1,5 +1,5 @@
+ ---
+-title: Authorization
+-description: Describes how to configure Istio's authorization features.
++title: 授权
++description: 关于如何配置 Istio 授权特性的描述。
+ weight: 30
+ ---
+diff --git a/content/zh/docs/reference/config/networking/_index.md b/content/zh/docs/reference/config/networking/_index.md
+index 7d13be65..e5feb72e 100644
+--- a/content/zh/docs/reference/config/networking/_index.md
++++ b/content/zh/docs/reference/config/networking/_index.md
+@@ -1,8 +1,8 @@
+ ---
+-title: Traffic Management
+-description: Describes how to configure HTTP/TCP routing features.
++title: 流量管理
++description: 描述如何配置 HTTP/TCP 路由功能。
+ weight: 11
+ aliases:
+-    - /docs/reference/config/istio.routing.v1alpha1/
+-    - /docs/reference/config/networking/
++    - /zh/docs/reference/config/istio.routing.v1alpha1/
++    - /zh/docs/reference/config/networking/
+ ---
+diff --git a/content/zh/docs/reference/config/policy-and-telemetry/_index.md b/content/zh/docs/reference/config/policy-and-telemetry/_index.md
+index 7326b1e3..8c8bf1e2 100644
+--- a/content/zh/docs/reference/config/policy-and-telemetry/_index.md
++++ b/content/zh/docs/reference/config/policy-and-telemetry/_index.md
+@@ -1,7 +1,7 @@
+ ---
+-title: Policies and Telemetry
+-description: Describes how to configure Istio's policy and telemetry features.
++title: 策略和遥测
++description: 描述如何配置 Istio 的策略和遥测功能。
+ weight: 30
+ aliases:
+-    - /docs/reference/config/mixer/index.html
++    - /zh/docs/reference/config/mixer/index.html
+ ---
+diff --git a/content/zh/docs/reference/config/policy-and-telemetry/adapters/_index.md b/content/zh/docs/reference/config/policy-and-telemetry/adapters/_index.md
+index ccb27824..25aea1e9 100644
+--- a/content/zh/docs/reference/config/policy-and-telemetry/adapters/_index.md
++++ b/content/zh/docs/reference/config/policy-and-telemetry/adapters/_index.md
+@@ -1,6 +1,6 @@
+ ---
+-title: Adapters
+-description: Mixer adapters allow Istio to interface to a variety of infrastructure backends for such things as metrics and logs.
++title: 适配器
++description: Mixer 适配器能够让 Istio 连接各种基础设施后端以完成类似指标和日志这样的功能。
+ weight: 40
+ aliases:
+     - /docs/reference/config/mixer/adapters/index.html
+@@ -8,12 +8,11 @@ aliases:
+ ---
+ 
+ {{< idea >}}
+-To implement a new adapter for Mixer, please refer to the
+-[Adapter Developer's Guide](https://github.com/istio/istio/wiki/Mixer-Compiled-In-Adapter-Dev-Guide).
++ 要实现一个新的 Mixer 适配器，请参考[适配器开发者指南](https://github.com/istio/istio/wiki/Mixer-Compiled-In-Adapter-Dev-Guide)。
+ {{< /idea >}}
+ 
+-## Templates
++## 模板
+ 
+-The table below shows the set of [templates](/docs/reference/config/policy-and-telemetry/templates) that are implemented by each supported adapter.
++下表显示了由每个支持的适配器实现的[模板](/docs/reference/config/policy-and-telemetry/templates)。
+ 
+-{{< adapter_table >}}
++{{< adapter_table >}}
+\ No newline at end of file
+diff --git a/content/zh/docs/reference/config/policy-and-telemetry/templates/_index.md b/content/zh/docs/reference/config/policy-and-telemetry/templates/_index.md
+index b5fab967..4666b8d4 100644
+--- a/content/zh/docs/reference/config/policy-and-telemetry/templates/_index.md
++++ b/content/zh/docs/reference/config/policy-and-telemetry/templates/_index.md
+@@ -1,13 +1,13 @@
+ ---
+-title: Templates
+-description: Mixer templates are used to send data to individual adapters.
++title: 模板
++description: Mixer 模板用于将数据发送到各个适配器。
+ weight: 50
+ aliases:
+-    - /docs/reference/config/template/index.html
++    - /zh/docs/reference/config/template/index.html
+ ---
+ 
+-## Adapters
++## 适配器
+ 
+-The table below shows the set of [adapters](/docs/reference/config/policy-and-telemetry/adapters) that implement each supported template.
++下表显示了实现每个受支持模板的[适配器](/zh/docs/reference/config/policy-and-telemetry/adapters)集。
+ 
+ {{< template_table >}}
+diff --git a/content/zh/docs/setup/additional-setup/_index.md b/content/zh/docs/setup/additional-setup/_index.md
+index 8b50622b..9a9f46b7 100644
+--- a/content/zh/docs/setup/additional-setup/_index.md
++++ b/content/zh/docs/setup/additional-setup/_index.md
+@@ -1,10 +1,10 @@
+ ---
+-title: More Guides
+-description: More information on additional setup tasks.
++title: 更多指南
++description: 有关其他设置任务的更多信息。
+ weight: 100
+ aliases:
+-    - /docs/tasks/installing-istio.html
+-    - /docs/setup/install-kubernetes.html
+-    - /docs/setup/kubernetes/additional-setup/
++    - /zh/docs/tasks/installing-istio.html
++    - /zh/docs/setup/install-kubernetes.html
++    - /zh/docs/setup/kubernetes/additional-setup/
+ keywords: [sidecar-injection, mesh-expansion, pod-requirements, piecemeal-install]
+ ---
+diff --git a/content/zh/docs/setup/install/_index.md b/content/zh/docs/setup/install/_index.md
+index cca42ed4..014a82ed 100644
+--- a/content/zh/docs/setup/install/_index.md
++++ b/content/zh/docs/setup/install/_index.md
+@@ -1,13 +1,12 @@
+ ---
+-title: Installation Guides
+-linktitle: Install
+-description: Choose the guide that best suits your needs and platform.
++title: 安装指南
++linktitle: 安装
++description: 选择最适合您的需求和平台的指南。
+ weight: 20
+ aliases:
+-    - /docs/setup/kubernetes/install/
++    - /zh/docs/setup/kubernetes/install/
+ ---
+ 
+ {{< tip >}}
+-Istio {{< istio_version >}} has been tested with these Kubernetes releases:
+-{{< supported_kubernetes_versions >}}.
++Istio {{< istio_version >}} 已通过这些 Kubernetes 发行版测试：{{< supported_kubernetes_versions >}}.
+ {{< /tip >}}
+diff --git a/content/zh/docs/setup/install/multicluster/_index.md b/content/zh/docs/setup/install/multicluster/_index.md
+index c86a48a9..ac2d0793 100644
+--- a/content/zh/docs/setup/install/multicluster/_index.md
++++ b/content/zh/docs/setup/install/multicluster/_index.md
+@@ -1,20 +1,16 @@
+ ---
+-title: Multicluster Installation
+-description: Configure an Istio mesh spanning multiple Kubernetes clusters.
++title: 多集群安装
++description: 配置跨越多个 Kubernetes 集群的 Istio 服务网格。
+ weight: 30
+-aliases:
+-    - /docs/setup/kubernetes/multicluster-install/
+-    - /docs/setup/kubernetes/multicluster/
+-    - /docs/setup/kubernetes/install/multicluster/
+ keywords: [kubernetes,multicluster]
++aliases:
++    - /zh/docs/setup/kubernetes/multicluster-install/
++    - /zh/docs/setup/kubernetes/multicluster/
++    - /zh/docs/setup/kubernetes/install/multicluster/
+ ---
+ 
+ {{< tip >}}
+-Note that these instructions are not mutually exclusive.
+-In a large multicluster deployment, composed from more than two clusters,
+-a combination of the approaches can be used. For example,
+-two clusters might share a control plane while a third has its own.
++请注意，这些说明不是互斥的。 在由两个以上集群组成的大型多集群部署中，可以使用这些方法的组合。 例如，两个集群可能共享一个控制平面，而第三个集群拥有自己的控制平面。
+ {{< /tip >}}
+ 
+-Refer to the [multicluster deployment model](/docs/setup/deployment-models/#multiple-clusters)
+-concept documentation for more information.
++欲获取更需信息请参考[多集群部署模型](/docs/setup/deployment-models/#multiple-clusters)。
+diff --git a/content/zh/docs/setup/platform-setup/_index.md b/content/zh/docs/setup/platform-setup/_index.md
+index be7c2a3f..29d936e7 100644
+--- a/content/zh/docs/setup/platform-setup/_index.md
++++ b/content/zh/docs/setup/platform-setup/_index.md
+@@ -1,12 +1,12 @@
+ ---
+-title: Platform Setup
+-description: How to prepare various Kubernetes platforms before installing Istio.
++title: 平台安装
++description: 在安装 Istio 之前如何准备各种 Kubernetes 平台。
+ weight: 10
+ aliases:
+-    - /docs/setup/kubernetes/platform-setup/
++    - /zh/docs/setup/kubernetes/platform-setup/
+ keywords: [platform-setup]
+ ---
+ 
+ {{< tip >}}
+-Istio {{< istio_version >}} has been tested with these Kubernetes releases: {{< supported_kubernetes_versions >}}.
++Istio {{< istio_version >}} 已在以下 Kubernetes 发现版下测试：{{< supported_kubernetes_versions >}}。
+ {{< /tip >}}
+diff --git a/content/zh/docs/setup/upgrade/_index.md b/content/zh/docs/setup/upgrade/_index.md
+index 8895c9cc..4cfba1f1 100644
+--- a/content/zh/docs/setup/upgrade/_index.md
++++ b/content/zh/docs/setup/upgrade/_index.md
+@@ -1,6 +1,6 @@
+ ---
+-title: Upgrade
+-description: Choose the upgrade guide that corresponds to the approach you previously used to install Istio.
++title: 升级
++description: 选择与您先前用于安装 Istio 的方法相对应的升级指南。
+ weight: 25
+ keywords: [kubernetes,upgrading]
+ ---
+diff --git a/content/zh/docs/tasks/_index.md b/content/zh/docs/tasks/_index.md
+index 7fb554f5..e2fa669a 100644
+--- a/content/zh/docs/tasks/_index.md
++++ b/content/zh/docs/tasks/_index.md
+@@ -1,6 +1,6 @@
+ ---
+-title: Tasks
+-description: How to do single specific targeted activities with the Istio system.
++title: 任务
++description: 如何用 Istio 系统实现特定目标的行为。
+ weight: 20
+ icon: tasks
+ ---
+diff --git a/content/zh/docs/tasks/observability/_index.md b/content/zh/docs/tasks/observability/_index.md
+index f7261649..3aa436f8 100644
+--- a/content/zh/docs/tasks/observability/_index.md
++++ b/content/zh/docs/tasks/observability/_index.md
+@@ -1,6 +1,6 @@
+ ---
+-title: Observability
+-description: Demonstrates how to collect telemetry information from the mesh.
++title: 可观察性
++description: 演示如何从网格收集遥测信息。
+ weight: 30
+ aliases:
+  - /docs/examples/telemetry/
+diff --git a/content/zh/docs/tasks/observability/distributed-tracing/_index.md b/content/zh/docs/tasks/observability/distributed-tracing/_index.md
+index 06e8100f..8a6b45ac 100644
+--- a/content/zh/docs/tasks/observability/distributed-tracing/_index.md
++++ b/content/zh/docs/tasks/observability/distributed-tracing/_index.md
+@@ -1,8 +1,8 @@
+ ---
+-title: Distributed Tracing
+-description: This task shows you how to configure Istio-enabled applications to collect trace spans.
++title: 分布式追踪
++description: 该任务展示了如何为启用了 Istio 支持的应用进行追踪。
+ weight: 30
+ keywords: [telemetry,tracing]
+ aliases:
+- - /docs/tasks/telemetry/distributed-tracing/
++ - /zh/docs/tasks/telemetry/distributed-tracing/
+ ---
+diff --git a/content/zh/docs/tasks/observability/logs/_index.md b/content/zh/docs/tasks/observability/logs/_index.md
+index 927d725a..8743f182 100644
+--- a/content/zh/docs/tasks/observability/logs/_index.md
++++ b/content/zh/docs/tasks/observability/logs/_index.md
+@@ -1,7 +1,7 @@
+ ---
+-title: Logs
+-description: Demonstrates the configuration, collection, and processing of Istio mesh logs.
++title: 日志
++description: 演示 Istio 网格日志的配置、收集和处理。
+ weight: 20
+ aliases:
+- - /docs/tasks/telemetry/logs/
+----
+\ No newline at end of file
++    - /zh/docs/tasks/telemetry/logs/
++---
+diff --git a/content/zh/docs/tasks/observability/metrics/_index.md b/content/zh/docs/tasks/observability/metrics/_index.md
+index 018cb16f..aba0dafd 100644
+--- a/content/zh/docs/tasks/observability/metrics/_index.md
++++ b/content/zh/docs/tasks/observability/metrics/_index.md
+@@ -1,7 +1,7 @@
+ ---
+-title: Metrics
+-description: Demonstrates the configuration, collection, and processing of Istio mesh metrics.
++title: 指标度量
++description: 演示 Istio 网格指标度量的配置、收集和处理。
+ weight: 1
+ aliases:
+- - /docs/tasks/telemetry/metrics/
+----
+\ No newline at end of file
++    - /zh/docs/tasks/telemetry/metrics/
++---
+diff --git a/content/zh/docs/tasks/policy-enforcement/_index.md b/content/zh/docs/tasks/policy-enforcement/_index.md
+index 6035736f..132a6b57 100644
+--- a/content/zh/docs/tasks/policy-enforcement/_index.md
++++ b/content/zh/docs/tasks/policy-enforcement/_index.md
+@@ -1,5 +1,5 @@
+ ---
+-title: Policies
+-description: Demonstrates policy enforcement features.
++title: 策略
++description: 演示策略执行功能。
+ weight: 20
+ ---
+diff --git a/content/zh/docs/tasks/security/_index.md b/content/zh/docs/tasks/security/_index.md
+index d751e5f3..36b50009 100644
+--- a/content/zh/docs/tasks/security/_index.md
++++ b/content/zh/docs/tasks/security/_index.md
+@@ -1,8 +1,8 @@
+ ---
+-title: Security
+-description: Demonstrates how to secure the mesh.
++title: 安全
++description: 演示如何保护网格。
+ weight: 19
+ aliases:
+-    - /docs/tasks/istio-auth.html
+-    - /docs/tasks/security/authz-permissive
++    - /zh/docs/tasks/istio-auth.html
++    - /zh/docs/tasks/security/authz-permissive
+ ---
+diff --git a/content/zh/docs/tasks/traffic-management/_index.md b/content/zh/docs/tasks/traffic-management/_index.md
+index 2a38381c..5208fee7 100644
+--- a/content/zh/docs/tasks/traffic-management/_index.md
++++ b/content/zh/docs/tasks/traffic-management/_index.md
+@@ -1,7 +1,7 @@
+ ---
+-title: Traffic Management
+-description: Tasks that demonstrate Istio's traffic routing features.
++title: 流量管理
++description: 演示 Istio 的流量路由功能的任务。
+ weight: 15
+ aliases:
+-    - /docs/examples/intelligent-routing/
++    - /zh/docs/examples/intelligent-routing/
+ ---
+diff --git a/content/zh/docs/tasks/traffic-management/egress/_index.md b/content/zh/docs/tasks/traffic-management/egress/_index.md
+index e108638d..5ae5e539 100644
+--- a/content/zh/docs/tasks/traffic-management/egress/_index.md
++++ b/content/zh/docs/tasks/traffic-management/egress/_index.md
+@@ -1,6 +1,6 @@
+ ---
+ title: Egress
+-description: Controlling egress traffic for an Istio service mesh.
++description: 控制 Istio 服务网格的出口流量。
+ weight: 71
+ keywords: [ingress,egress,gateway]
+ ---
+diff --git a/content/zh/docs/tasks/traffic-management/ingress/_index.md b/content/zh/docs/tasks/traffic-management/ingress/_index.md
+index 68e79738..1df33311 100644
+--- a/content/zh/docs/tasks/traffic-management/ingress/_index.md
++++ b/content/zh/docs/tasks/traffic-management/ingress/_index.md
+@@ -1,5 +1,5 @@
+ ---
+-title: 控制 Ingress 流量
+-description: 控制 Istio 服务网格的 Ingress 流量。
++title: Ingress
++description: 控制 Istio 服务网格的入口流量。
+ weight: 70
+ ---
+diff --git a/content/zh/faq/_index.md b/content/zh/faq/_index.md
+index 214878f2..d3c5c1f2 100644
+--- a/content/zh/faq/_index.md
++++ b/content/zh/faq/_index.md
+@@ -1,13 +1,13 @@
+ ---
+ title: FAQ
+-description: Frequently Asked Questions about Istio.
+-weight: 1
++description: 关于Istio的常见问题。
++weight: 20
+ layout: faq-landing
+-aliases:
+-  - /docs/welcome/faq.html
+-  - /docs/reference/faq.html
+-  - /help/faq/
+ icon: faq
++aliases: 
++  - /zh/docs/welcome/faq.html
++  - /zh/docs/reference/faq.html
++  - /zh/help/faq/
+ ---
+ 
+-You've got questions? We've got answers!
++您有问题吗？ 我们有答案！
+diff --git a/content/zh/news/2017/_index.md b/content/zh/news/2017/_index.md
+index 3bc56407..1a7cb6a5 100644
+--- a/content/zh/news/2017/_index.md
++++ b/content/zh/news/2017/_index.md
+@@ -1,6 +1,6 @@
+ ---
+-title: 2017 News
+-description: News items for 2017.
++title: 2017 年的新闻
++description: 2017 年的新闻。
+ weight: 20
+ icon: newspaper
+ list_by_publishdate: true
+diff --git a/content/zh/news/2018/_index.md b/content/zh/news/2018/_index.md
+index c5e3ebbe..9bf0c344 100644
+--- a/content/zh/news/2018/_index.md
++++ b/content/zh/news/2018/_index.md
+@@ -1,6 +1,6 @@
+ ---
+-title: 2018 News
+-description: News items for 2018.
++title: 2018 年的新闻
++description: 2018 年的新闻。
+ weight: 10
+ icon: newspaper
+ list_by_publishdate: true
+diff --git a/content/zh/news/2019/_index.md b/content/zh/news/2019/_index.md
+index a20a991b..164436ca 100644
+--- a/content/zh/news/2019/_index.md
++++ b/content/zh/news/2019/_index.md
+@@ -1,6 +1,6 @@
+ ---
+-title: 2019 News
+-description: News items for 2019.
++title: 2019 年的新闻
++description: 2019 年的新闻。
+ weight: 9
+ icon: newspaper
+ list_by_publishdate: true
+diff --git a/content/zh/news/_index.md b/content/zh/news/_index.md
+index 1345fbe9..14c8aff2 100644
+--- a/content/zh/news/_index.md
++++ b/content/zh/news/_index.md
+@@ -1,7 +1,7 @@
+ ---
+-title: Istio News
+-description: Timely news about the Istio project.
+-linktitle: News
++title: Istio 新闻
++description: 有关 Istio 项目的及时新闻。
++linktitle: 新闻
+ sidebar_multicard: true
+ icon: newspaper
+ ---
+diff --git a/content/zh/test/_index.md b/content/zh/test/_index.md
+index 94b9efd6..e5c532e0 100644
+--- a/content/zh/test/_index.md
++++ b/content/zh/test/_index.md
+@@ -1,5 +1,5 @@
+ ---
+-title: Tests
+-description: Bunch 'o tests for the the web site infrastructure, no useful content here.
++title: 测试
++description: 网站基础设施的捆绑测试，此处无有用内容。
+ skip_sitemap: true
+ ---
