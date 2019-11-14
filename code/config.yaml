@@ -1,0 +1,13 @@
+istio:
+  db:
+    path: "../data/" # sqlite 数据库
+    db: "db.sqlite"
+  init:
+    start_time: "2019-11-03T00:00:00Z" # 开始统计日期
+  branch: "master"
+  upstream: "https://github.com/istio/istio.io.git"  # 上游分支，用于拉取最新的代码
+  pull_flag: True
+  github_url: "https://github.com/"  # github 仓库地址
+  github_token: "914f97917d7484c0d6b2128bdaf650772ab76dc3" # token
+  graphql_v4:
+    url: "https://api.github.com/graphql"

@@ -116,8 +116,6 @@
 ## 数据展示
 1.1 调用 pyecharts 展示相应的数据。[pyecharts 参考](https://github.com/pyecharts/pyecharts)
 
-## 下一步计划
-1.1 优化代码（封装、配置）、命令式自动化、dockerfile、flask web部署。
 
 ## 总结
 其他中文翻译项目类似，github(git获取详细信息)、数据简单分析处理、数据展示。
