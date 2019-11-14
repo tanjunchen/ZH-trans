@@ -1,5 +1,5 @@
 # 开发文档 
-代码简单，下次整理优化，实现完全自动化。
+
 ## istio/istio.io 数据源
 1.1 通过[GraphQL API v4](https://developer.github.com/v4/)拉取`istio/istio.io`已经`merged`的数据。
 具体获取数据规则，可以参考相关文档。也可以选择[REST API v3](https://developer.github.com/v3/),参考资料丰富。
