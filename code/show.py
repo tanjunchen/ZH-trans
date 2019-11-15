@@ -53,16 +53,19 @@ class Show(object):
         else:
             series_name = "开始时间：" + self.begin_time + "  结束时间：" + self.end_time + "\n istio.io 更新中文翻译字数统计 总参与人数为：" + str(
                 len(all_data)) + "\n istio.io 更新中文翻译字数统计 总翻译字数为：" + str(total)
+
+        generated_log(series_name, self.flag)
         # 饼图
         pie = Pie()
         pie.add("", data_pair=all_data, center=["40%", "62%"], radius=["0%", "45%"], rosetype='radius').set_global_opts(
             title_opts=opts.TitleOpts(title=""),
             legend_opts=opts.LegendOpts(orient="vertical", pos_top="5%", pos_right="6%")).set_series_opts(
             label_opts=opts.LabelOpts(horizontal_align=True, formatter="{b}: {c}"))
+        html_time = str(time.strftime('%Y-%m-%d', time.localtime(time.time()))).replace("-", "")
         if self.flag == 0:
-            pie.render("page_add.html")
+            pie.render(html_time + "page_pie_add.html")
         else:
-            pie.render("page_update.html")
+            pie.render(html_time + "page_pie_update.html")
 
         # 柱状图
         bar = (
@@ -70,15 +73,32 @@ class Show(object):
                 title_opts=opts.TitleOpts(title="翻译统计"))
         )
         if self.flag == 0:
-            bar.render("page_bar_add.html")
+            bar.render(html_time + "page_bar_add.html")
         else:
-            bar.render("page_bar_update.html")
+            bar.render(html_time + "page_bar_update.html")
 
         cursor.close()
         conn.commit()
         conn.close()
 
 
+def generated_log(content, flag):
+    path = "../log"
+    if not os.path.exists(path):
+        os.mkdir(path)
+    else:
+        content = "\n\n" + content
+    if flag == 1:
+        with open("../log/log_update.md", encoding="utf-8", mode="a+")as f:
+            f.write(content)
+    elif flag == 0:
+        with open("../log/log_add.md", encoding="utf-8", mode="a+")as f:
+            f.write(content)
+
+
 if __name__ == '__main__':
-    show = Show()
+    show = Show(flag=0)
     show.get_github_id_sum()
+
+    show2 = Show(flag=1)
+    show2.get_github_id_sum()
