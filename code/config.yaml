@@ -8,6 +8,6 @@ istio:
   upstream: "https://github.com/istio/istio.io.git"  # 上游分支，用于拉取最新的代码
   pull_flag: True
   github_url: "https://github.com/"  # github 仓库地址
-  github_token: "a56250f47d4af63178b9ace40a7983680d97a8f0" # token
+  github_token: "de672cd33ddb0cffb58d9dcedc62cd7af8940408" # token
   graphql_v4:
     url: "https://api.github.com/graphql"
