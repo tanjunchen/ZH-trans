@@ -1,0 +1,17 @@
+duration:
+  start: "2019-11-00T00:00:00Z"
+  end: ""
+except: "'5305', '5823', '5990'"
+github_token: ""
+chart:
+  title: "Istio Translation Analysis"
+  series: "Translated Chinese Words"
+  pr_top: 10
+  zh_sum_show: 20
+  pr_participants_top: 10
+  pr_reviewers_top: 10
+repository:
+  owner: "istio"
+  name: "istio.io"
+  branch: "master"
+  trans_label: "translation/chinese"

@@ -1,0 +1,13 @@
+certifi==2019.9.11
+chardet==3.0.4
+gitdb2==2.0.6
+idna==2.8
+Jinja2==2.10.3
+MarkupSafe==1.1.1
+prettytable==0.7.2
+pyecharts==1.6.0
+PyYAML==5.1.2
+requests==2.22.0
+simplejson==3.17.0
+smmap2==2.0.5
+urllib3==1.25.7
