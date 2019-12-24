@@ -31,6 +31,7 @@ class TransAnalysis(object):
         self.github_token = self.config['github_token']
         self.start_time = self.config["duration"]["start"]
         self.end_time = self.config["duration"]["end"]
+        self.filter_pr = self.config['filter'].split(",")
         if self.start_time == "":
             self.start_time = datetime.datetime.utcfromtimestamp(time.time()).strftime("%Y-%m-%dT%H:%M:%SZ")
         if self.end_time == "":
@@ -150,6 +151,7 @@ class TransAnalysis(object):
     '''
     reviewers 前 10 名
     '''
+
     def get_reviewers_top_10(self):
         conn, cursor = self.get_cursor()
         select_reviewer = " select review_login from pull_request " + \
@@ -175,6 +177,7 @@ class TransAnalysis(object):
     '''
     participants 每天参与 pr 的人数统计
     '''
+
     def get_participants_each_day(self):
         conn, cursor = self.get_cursor()
         select_participant = " select strftime('%Y-%m-%d',merged_time) as merged_date, " \
@@ -274,7 +277,7 @@ class TransAnalysis(object):
                                     }
                                     assignees(first: 30) {
                                         nodes {
-                                          name
+                                          login
                                         }
                                     }
                                     author {
@@ -311,6 +314,9 @@ class TransAnalysis(object):
             prs = result["data"]["repository"]["pullRequests"]["edges"]
             for pr in prs:
                 pr_number = pr["node"]["number"]
+                # 过滤 login 因为获取 login 会报错
+                if str(pr_number) in self.filter_pr:
+                    continue
                 pr_github_id = pr["node"]["author"]["login"]
                 pr_merged_time = pr["node"]["mergedAt"]
                 pr_base_branch = pr["node"]["baseRef"]["name"]
@@ -325,7 +331,7 @@ class TransAnalysis(object):
                 else:
                     reviews_login = None
 
-                assignees_logins = [n["name"] for n in [i for i in pr["node"]["assignees"]["nodes"]]]
+                assignees_logins = [n["login"] for n in [i for i in pr["node"]["assignees"]["nodes"]]]
                 if len(assignees_logins) > 0:
                     assignees_login = ','.join(assignees_logins)
                 else:
@@ -375,7 +381,7 @@ class TransAnalysis(object):
                                     }
                                     assignees(first: 30) {
                                         nodes {
-                                          name
+                                          login
                                         }
                                     }
                                     author {
@@ -413,6 +419,9 @@ class TransAnalysis(object):
             prs = result["data"]["repository"]["pullRequests"]["edges"]
             for pr in prs:
                 pr_number = pr["node"]["number"]
+                # 过滤 login 因为获取 login 会报错
+                if str(pr_number) in self.filter_pr:
+                    continue
                 pr_github_id = pr["node"]["author"]["login"]
                 pr_merged_time = pr["node"]["mergedAt"]
                 pr_base_branch = pr["node"]["baseRef"]["name"]
@@ -428,7 +437,7 @@ class TransAnalysis(object):
                     reviews_login = None
 
                 assignees = pr["node"]["assignees"]["nodes"]
-                assignees_logins = [n["name"] for n in [i for i in assignees]]
+                assignees_logins = [n["login"] for n in [i for i in assignees]]
 
                 if len(assignees_logins) > 0 and assignees_logins[0] is not None:
                     assignees_login = ','.join(assignees_logins)
@@ -459,20 +468,19 @@ class TransAnalysis(object):
 
     def insert_merged_prs(self, prs):
         conn, cursor = self.get_cursor()
-        insert_sql = "insert into pull_request (number,github_id,merged_time," \
-                     "merged_by,create_time,merged_time,assignee_login,review_login," \
+        insert_sql = "insert into pull_request (number,github_id,merged_by,merged_time," \
+                     "create_time,merged_time,assignee_login,review_login," \
                      "participant_login,base_branch,zh_word_count) values (?, ?, ?, ?, ?, ?, ?, ?, ? ,?,?)"
         for pr in prs:
             number, github_id, merged_by, create_time, merged_time, assignee_login, \
             review_login, participant_login, base_branch = \
-                pr[0], pr[1], pr[2], pr[3], pr[4], pr[5], pr[6], pr[7], pr[
-                    8]
+                pr[0], pr[1], pr[2], pr[3], pr[4], pr[5], pr[6], pr[7], pr[8]
             cursor.execute("select * from pull_request where number = '" + str(number) + "'")
             if cursor.fetchone() is None:
                 zh_word_count = self.calc_zh_word_count(self.query_github_pr_diff(number))
                 print("analysis: pr_number ", number, "; zh_word_count ", zh_word_count)
                 cursor.execute(insert_sql, (
-                    number, github_id, merged_by ,merged_time, create_time, merged_time, assignee_login, review_login,
+                    number, github_id, merged_by, merged_time, create_time, merged_time, assignee_login, review_login,
                     participant_login, base_branch, zh_word_count))
                 conn.commit()
         cursor.close()
@@ -532,12 +540,13 @@ class ChartGenerator(object):
         conn.close()
 
 
-if __name__ == '__main__':
+def start():
     trans_analysis = TransAnalysis()
-    # trans_analysis.ensure_tables()
-    # trans_analysis.analysis_prs()
-    trans_analysis.get_participants_each_day()
-
-    # chart_gen = ChartGenerator()
-    # chart_gen.gen_chart()
+    trans_analysis.ensure_tables()
+    trans_analysis.analysis_prs()
+    print(datetime.datetime.utcfromtimestamp(time.time()).strftime("%Y-%m-%dT%H:%M:%SZ"))
     print("All work done ^_^")
+
+
+if __name__ == '__main__':
+    start()

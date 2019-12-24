@@ -2,7 +2,8 @@ duration:
   start: "2019-11-00T00:00:00Z"
   end: ""
 except: "'5305', '5823', '5990'"
-github_token: ""
+filter: "2538"
+github_token: "xxx"
 chart:
   title: "Istio Translation Analysis"
   series: "Translated Chinese Words"
