@@ -6,7 +6,7 @@ Jinja2==2.11.3
 MarkupSafe==1.1.1
 prettytable==0.7.2
 pyecharts==1.6.0
-PyYAML==5.1.2
+PyYAML==5.4
 requests==2.22.0
 simplejson==3.17.0
 smmap2==2.0.5
